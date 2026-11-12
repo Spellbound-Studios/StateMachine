@@ -1,0 +1,20 @@
+{
+  "name": "Spellbound.PackageName.Editor",
+  "rootNamespace": "Spellbound.PackageName.Editor",
+  "references": ["Spellbound.PackageName", "Spellbound.Core"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": ["SPELLBOUND_CORE"],
+  "versionDefines": [
+    {
+      "name": "com.spellboundstudios.core",
+      "expression": "CORE_RANGE",
+      "define": "SPELLBOUND_CORE"
+    }
+  ],
+  "noEngineReferences": false
+}

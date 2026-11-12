@@ -1,0 +1,11 @@
+name: pull request
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - edited
+      - synchronize
+jobs:
+  checks:
+    uses: Spellbound-Studios/.github/.github/workflows/check.yml@main

@@ -1,0 +1,16 @@
+name: release
+on:
+  push:
+    branches: [main, beta, rc, 'release-*']
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: Preview the next version and its notes without releasing
+        type: boolean
+        default: false
+jobs:
+  release:
+    uses: Spellbound-Studios/.github/.github/workflows/release.yml@main
+    with:
+      dry-run: ${{ inputs.dry-run == true }}
+    secrets: inherit
