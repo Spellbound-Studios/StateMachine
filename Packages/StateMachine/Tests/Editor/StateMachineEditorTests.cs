@@ -2,11 +2,11 @@
 
 using NUnit.Framework;
 
-namespace Spellbound.PackageName.Editor.Tests {
-    public class PackageNameEditorTests {
+namespace Spellbound.StateMachine.Editor.Tests {
+    public class StateMachineEditorTests {
         [Test]
         public void FrontDoorTypeExists() {
-            Assert.IsNotNull(typeof(PackageNameKit));
+            Assert.IsNotNull(typeof(StateMachineKit));
         }
     }
 }

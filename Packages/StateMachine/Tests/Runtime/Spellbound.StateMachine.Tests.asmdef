@@ -1,7 +1,7 @@
 {
-  "name": "Spellbound.PackageName.Tests",
-  "rootNamespace": "Spellbound.PackageName.Tests",
-  "references": ["Spellbound.PackageName", "UnityEngine.TestRunner", "UnityEditor.TestRunner"],
+  "name": "Spellbound.StateMachine.Tests",
+  "rootNamespace": "Spellbound.StateMachine.Tests",
+  "references": ["Spellbound.StateMachine", "UnityEngine.TestRunner", "UnityEditor.TestRunner"],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
@@ -12,7 +12,7 @@
   "versionDefines": [
     {
       "name": "com.spellboundstudios.core",
-      "expression": "CORE_RANGE",
+      "expression": "[1.1.9,3.0.0)",
       "define": "SPELLBOUND_CORE"
     }
   ],

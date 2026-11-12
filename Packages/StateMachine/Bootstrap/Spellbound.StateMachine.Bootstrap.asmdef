@@ -1,18 +1,18 @@
 {
-  "name": "Spellbound.PackageName",
-  "rootNamespace": "Spellbound.PackageName",
-  "references": ["Spellbound.Core"],
-  "includePlatforms": [],
+  "name": "Spellbound.StateMachine.Bootstrap",
+  "rootNamespace": "Spellbound.StateMachine.Bootstrap",
+  "references": [],
+  "includePlatforms": ["Editor"],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
   "overrideReferences": false,
   "precompiledReferences": [],
-  "autoReferenced": true,
-  "defineConstraints": ["SPELLBOUND_CORE"],
+  "autoReferenced": false,
+  "defineConstraints": [],
   "versionDefines": [
     {
       "name": "com.spellboundstudios.core",
-      "expression": "CORE_RANGE",
+      "expression": "[1.1.9,3.0.0)",
       "define": "SPELLBOUND_CORE"
     }
   ],

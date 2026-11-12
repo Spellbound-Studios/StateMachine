@@ -54,11 +54,11 @@ plugins:
         headerPartial: |
           ## [{{version}}] - {{date}}
   - - "@semantic-release/changelog"
-    - changelogFile: Packages/PackageName/CHANGELOG.md
+    - changelogFile: Packages/StateMachine/CHANGELOG.md
   - - "@semantic-release/exec"
     - prepareCmd: bash scripts/set-package-version.sh ${nextRelease.version}
   - - "@semantic-release/git"
     - assets:
-        - Packages/PackageName/package.json
-        - Packages/PackageName/CHANGELOG.md
+        - Packages/StateMachine/package.json
+        - Packages/StateMachine/CHANGELOG.md
   - "@semantic-release/github"

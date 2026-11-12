@@ -8,10 +8,10 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using PackageInfo = UnityEditor.PackageManager.PackageInfo;
 
-namespace Spellbound.PackageName.Bootstrap {
-    public sealed class PackageNameBootstrap : EditorWindow {
+namespace Spellbound.StateMachine.Bootstrap {
+    public sealed class StateMachineBootstrap : EditorWindow {
         private const string WindowKey = "Spellbound.Bootstrap.WindowShown";
-        private const string LineKey = "Spellbound.Bootstrap.PackageName";
+        private const string LineKey = "Spellbound.Bootstrap.StateMachine";
         private const string AddressFile = "FoundationAddress.txt";
         private const string Foundation = "com.spellboundstudios.core";
 
@@ -21,7 +21,7 @@ namespace Spellbound.PackageName.Bootstrap {
 
             if (!SessionState.GetBool(LineKey, false)) {
                 SessionState.SetBool(LineKey, true);
-                Debug.LogWarning("PackageName needs " + Foundation + ". Install it from the Package Manager with "
+                Debug.LogWarning("StateMachine needs " + Foundation + ". Install it from the Package Manager with "
                                  + "Install package from git URL: " + address);
             }
 
@@ -31,14 +31,14 @@ namespace Spellbound.PackageName.Bootstrap {
 
             SessionState.SetBool(WindowKey, true);
             EditorApplication.delayCall += () => {
-                var window = CreateInstance<PackageNameBootstrap>();
+                var window = CreateInstance<StateMachineBootstrap>();
                 window.titleContent = new GUIContent(Foundation);
                 window.ShowUtility();
             };
         }
 
         private static string Address() {
-            var package = PackageInfo.FindForAssembly(typeof(PackageNameBootstrap).Assembly);
+            var package = PackageInfo.FindForAssembly(typeof(StateMachineBootstrap).Assembly);
             var path = package == null ? null : Path.Combine(package.resolvedPath, "Bootstrap", AddressFile);
             var line = path != null && File.Exists(path) ? FirstLine(path) : null;
             return string.IsNullOrEmpty(line) ? Foundation : line;
@@ -56,7 +56,7 @@ namespace Spellbound.PackageName.Bootstrap {
 
         private void CreateGUI() {
             var address = Address();
-            var message = new Label("PackageName needs " + Foundation + ", which this project does not hold yet.");
+            var message = new Label("StateMachine needs " + Foundation + ", which this project does not hold yet.");
             message.style.whiteSpace = WhiteSpace.Normal;
             rootVisualElement.Add(message);
             var field = new TextField { value = address, isReadOnly = true };
