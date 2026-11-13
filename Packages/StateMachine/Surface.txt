@@ -1,0 +1,98 @@
+surface 1
+member Spellbound.StateMachine.Editor.StateCatalogueCollector.Collect(Spellbound.StateMachine.StateCatalogue) : static System.Int32
+member Spellbound.StateMachine.IStateBinding<TStateKey>.Slot : TStateKey { get; }
+member Spellbound.StateMachine.IStateBinding<TStateKey>.Variant : Spellbound.StateMachine.State { get; }
+member Spellbound.StateMachine.IStateMachine.CurrentState : Spellbound.StateMachine.State { get; }
+member Spellbound.StateMachine.IStateMachine.CurrentStateHash : System.UInt32 { get; }
+member Spellbound.StateMachine.IStateMachine.IsInState(System.UInt32) : System.Boolean
+member Spellbound.StateMachine.IStateMachine.IsInState<TVariant>() : System.Boolean
+member Spellbound.StateMachine.IStateMachineConfiguration<TStateKey>.Bindings : System.Collections.Generic.IReadOnlyList<Spellbound.StateMachine.IStateBinding<TStateKey>> { get; }
+member Spellbound.StateMachine.IStateMachineConfiguration<TStateKey>.InitialState : TStateKey { get; }
+member Spellbound.StateMachine.State.Context : System.Object { get; }
+member Spellbound.StateMachine.State.EnterStateLogic() : abstract System.Void
+member Spellbound.StateMachine.State.ExitStateLogic() : abstract System.Void
+member Spellbound.StateMachine.State.FixedUpdateStateLogic() : abstract System.Void
+member Spellbound.StateMachine.State.InitializeWithContext(System.Object) : virtual System.Void
+member Spellbound.StateMachine.State.OnContextInitialized() : virtual System.Void
+member Spellbound.StateMachine.State.OnEnter() : System.Void
+member Spellbound.StateMachine.State.OnExit() : System.Void
+member Spellbound.StateMachine.State.OnFixedUpdate() : System.Void
+member Spellbound.StateMachine.State.OnStateInitialize() : virtual System.Void
+member Spellbound.StateMachine.State.OnUpdate() : System.Void
+member Spellbound.StateMachine.State.UpdateStateLogic() : abstract System.Void
+member Spellbound.StateMachine.State.new()
+member Spellbound.StateMachine.StateBinding<TStateKey>.Slot : TStateKey { get; }
+member Spellbound.StateMachine.StateBinding<TStateKey>.Variant : Spellbound.StateMachine.State { get; }
+member Spellbound.StateMachine.StateBinding<TStateKey>.new()
+member Spellbound.StateMachine.StateBinding<TStateKey>.new(TStateKey, Spellbound.StateMachine.State)
+member Spellbound.StateMachine.StateCatalogue.States : System.Collections.Generic.IReadOnlyList<Spellbound.StateMachine.State> { get; }
+member Spellbound.StateMachine.StateCatalogue.new()
+member Spellbound.StateMachine.StateDriver.ChangeVariant(Spellbound.StateMachine.State) : virtual System.Void
+member Spellbound.StateMachine.StateDriver.CurrentStateVariant : Spellbound.StateMachine.State
+member Spellbound.StateMachine.StateDriver.CurrentVariant : Spellbound.StateMachine.State { get; }
+member Spellbound.StateMachine.StateDriver.DriveFixedUpdate() : virtual System.Void
+member Spellbound.StateMachine.StateDriver.DriveUpdate() : virtual System.Void
+member Spellbound.StateMachine.StateDriver.IsActive : System.Boolean { get; }
+member Spellbound.StateMachine.StateDriver.IsActiveDriver : System.Boolean
+member Spellbound.StateMachine.StateDriver.OnBecomeActive() : virtual System.Void
+member Spellbound.StateMachine.StateDriver.OnBecomeInactive() : virtual System.Void
+member Spellbound.StateMachine.StateDriver.new()
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.ApplyVariant(TStateKey, Spellbound.StateMachine.State) : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.ApplyVariant<TVariant>(TStateKey) : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.ChangeState(TStateKey) : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.Configure(Spellbound.StateMachine.IStateMachineConfiguration<TStateKey>) : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.Configure<TBinding>(System.Collections.Generic.List<TBinding>, TStateKey) : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.Context : TContext { get; }
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.CurrentActiveDriver : Spellbound.StateMachine.StateDriver { get; }
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.CurrentState : Spellbound.StateMachine.State { get; }
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.CurrentStateHash : System.UInt32 { get; }
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.CurrentStateKey : TStateKey { get; }
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.Dispose() : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.FixedUpdateStateMachine() : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.GetCurrentRunningState() : Spellbound.StateMachine.State
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.GetCurrentVariant(TStateKey) : Spellbound.StateMachine.State
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.GetState<TVariant>() : TVariant
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.IsInState(System.UInt32) : System.Boolean
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.IsInState<TVariant>() : System.Boolean
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.RegisterState(Spellbound.StateMachine.State) : Spellbound.StateMachine.State
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.RegisterStateDriver(TStateKey, Spellbound.StateMachine.StateDriver) : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.RestoreDefault(TStateKey) : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.SetInitialVariant(TStateKey, Spellbound.StateMachine.State) : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.UpdateStateMachine() : System.Void
+member Spellbound.StateMachine.StateMachine<TContext, TStateKey>.new(TContext)
+member Spellbound.StateMachine.StateMachineConfiguration<TStateKey>.Bindings : System.Collections.Generic.IReadOnlyList<Spellbound.StateMachine.IStateBinding<TStateKey>> { get; }
+member Spellbound.StateMachine.StateMachineConfiguration<TStateKey>.InitialState : TStateKey { get; }
+member Spellbound.StateMachine.StateMachineConfiguration<TStateKey>.new()
+member Spellbound.StateMachine.StateMachineConfiguration<TStateKey>.new(TStateKey, Spellbound.StateMachine.StateBinding<TStateKey>[])
+member Spellbound.StateMachine.StateMachineKit.Create<TContext, TStateKey>(TContext, Spellbound.StateMachine.IStateMachineConfiguration<TStateKey>) : static Spellbound.StateMachine.StateMachine<TContext, TStateKey>
+member Spellbound.StateMachine.StateMachineKit.Registry : static Spellbound.StateMachine.StateRegistry { get; }
+member Spellbound.StateMachine.StateMachineKit.UseStates(Spellbound.StateMachine.StateCatalogue) : static System.Void
+member Spellbound.StateMachine.StateMachineKit.UseStates(System.Collections.Generic.IReadOnlyList<Spellbound.StateMachine.State>) : static System.Void
+member Spellbound.StateMachine.StateMachineOperations.States(Spellbound.Core.Operations.OperationContext, System.Int32, System.Int32) : static Spellbound.Core.Operations.OperationResult
+member Spellbound.StateMachine.StateRegistry.Add(Spellbound.StateMachine.State) : System.Void
+member Spellbound.StateMachine.StateRegistry.All : System.Collections.Generic.IReadOnlyList<Spellbound.StateMachine.State> { get; }
+member Spellbound.StateMachine.StateRegistry.Clear() : System.Void
+member Spellbound.StateMachine.StateRegistry.Contains(System.UInt32) : System.Boolean
+member Spellbound.StateMachine.StateRegistry.Count : System.Int32 { get; }
+member Spellbound.StateMachine.StateRegistry.Get(System.UInt32) : Spellbound.StateMachine.State
+member Spellbound.StateMachine.StateRegistry.ReadState(ref System.ReadOnlySpan<System.Byte>) : Spellbound.StateMachine.State
+member Spellbound.StateMachine.StateRegistry.TryGet(System.UInt32, out Spellbound.StateMachine.State) : System.Boolean
+member Spellbound.StateMachine.StateRegistry.Use(Spellbound.StateMachine.StateCatalogue) : System.Void
+member Spellbound.StateMachine.StateRegistry.Use(System.Collections.Generic.IReadOnlyList<Spellbound.StateMachine.State>) : System.Void
+member Spellbound.StateMachine.StateRegistry.WriteState(ref System.Span<System.Byte>, Spellbound.StateMachine.State) : static System.Void
+member Spellbound.StateMachine.StateRegistry.new()
+member Spellbound.StateMachine.StateRegistry.new(Spellbound.StateMachine.StateCatalogue)
+member Spellbound.StateMachine.StateRegistry.new(System.Collections.Generic.IReadOnlyList<Spellbound.StateMachine.State>)
+type Spellbound.StateMachine.Editor.StateCatalogueCollector : static class
+type Spellbound.StateMachine.IStateBinding<TStateKey> : interface
+type Spellbound.StateMachine.IStateMachine : interface
+type Spellbound.StateMachine.IStateMachineConfiguration<TStateKey> : interface
+type Spellbound.StateMachine.State : abstract class : Spellbound.Core.Registries.HashedScriptableObject
+type Spellbound.StateMachine.StateBinding<TStateKey> : sealed class : Spellbound.StateMachine.IStateBinding<TStateKey>
+type Spellbound.StateMachine.StateCatalogue : sealed class : UnityEngine.ScriptableObject
+type Spellbound.StateMachine.StateDriver : class
+type Spellbound.StateMachine.StateMachine<TContext, TStateKey> : sealed class : Spellbound.StateMachine.IStateMachine, System.IDisposable
+type Spellbound.StateMachine.StateMachineConfiguration<TStateKey> : sealed class : Spellbound.StateMachine.IStateMachineConfiguration<TStateKey>
+type Spellbound.StateMachine.StateMachineKit : static class
+type Spellbound.StateMachine.StateMachineOperations : static class
+type Spellbound.StateMachine.StateRegistry : sealed class

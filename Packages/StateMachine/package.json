@@ -1,0 +1,19 @@
+{
+  "name": "com.spellboundstudios.statemachine",
+  "version": "0.0.0",
+  "displayName": "Spellbound.StateMachine",
+  "description": "Gives any game asset-defined states: a machine over a context, states as ScriptableObjects swapped in the inspector, a registry that finds them.",
+  "unity": "6000.3",
+  "author": {
+    "name": "Spellbound Studios",
+    "url": "https://github.com/Spellbound-Studios/StateMachine"
+  },
+  "dependencies": {},
+  "samples": [
+    {
+      "displayName": "StateMachine Sample",
+      "description": "Shows the package's front door in use.",
+      "path": "Samples~/StateMachineSample"
+    }
+  ]
+}
