@@ -1,7 +1,7 @@
 {
   "name": "Spellbound.StateMachine.Tests",
   "rootNamespace": "Spellbound.StateMachine.Tests",
-  "references": ["Spellbound.StateMachine", "UnityEngine.TestRunner", "UnityEditor.TestRunner"],
+  "references": ["Spellbound.StateMachine", "Spellbound.Core", "UnityEngine.TestRunner"],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,

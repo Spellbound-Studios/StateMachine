@@ -1,7 +1,7 @@
 {
   "name": "Spellbound.StateMachine.Samples",
   "rootNamespace": "Spellbound.StateMachine.Samples",
-  "references": ["Spellbound.StateMachine"],
+  "references": ["Spellbound.StateMachine", "Spellbound.Core"],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,

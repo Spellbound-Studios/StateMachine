@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7aa631e6b97d0478e2779a45770cef, type: 3}
+  m_Name: AmberPhase
+  m_EditorClassIdentifier: Spellbound.StateMachine.Samples::Spellbound.StateMachine.Samples.AmberPhase
+  guid: fc1ca0b76b20498429df2e2e680c1417
+  hash: 3492968420
+  duration: 1.5
+  colour: {r: 1, g: 0.6, b: 0, a: 1}
